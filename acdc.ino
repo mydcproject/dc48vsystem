@@ -46,17 +46,17 @@ if (sensorValue<sensorValue1 && climbhill==1)
   delay(100);
  }
  {
-  if(Veff>=100&&vin>=10)
+  if(Veff>=120&&vin>=12)
    {
     digitalWrite(relay1,HIGH);
     digitalWrite(relay2,LOW);
    }
- else if(Veff>=100&&vin<10)
+ else if(Veff>=120&&vin<12)
   {
    digitalWrite(relay1,LOW);
    digitalWrite(relay2,HIGH);
   }
-     else if(Veff<100&&vin>9)
+     else if(Veff<120&&vin>11.4)
      {
       digitalWrite(relay1,LOW);
       digitalWrite(relay2,HIGH);

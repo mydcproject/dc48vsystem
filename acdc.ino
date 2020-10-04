@@ -14,9 +14,10 @@ int value = 0;
 int relay1 = 12;
 int relay2 = 11;
 void setup() {
-pinMode(analogInput, INPUT);
+pinMode(analogInput,INPUT);
 Serial.begin(9600);
 pinMode(relay1,OUTPUT);
+pinMode(relay2,OUTPUT);
 }
 void loop() {
 sensorValue1=sensorValue;
@@ -66,4 +67,5 @@ if (sensorValue<sensorValue1 && climbhill==1)
       digitalWrite(relay2,HIGH);
     }     
  }
+}
 }
